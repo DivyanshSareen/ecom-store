@@ -1,5 +1,50 @@
 @import url("https://peaceui.netlify.app/peace.css");
 
+/* hero section */
+.hero{
+    height: 28rem;
+    background-image: url("https://images.pexels.com/photos/1661903/pexels-photo-1661903.jpeg?cs=srgb&dl=pexels-amy-t-1661903.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    margin: 8rem 3rem 3rem 3rem;
+    border-radius: var(--radius-m);
+}
+
+.hero-title{
+    color: var(--primary);
+}
+
+.hero-subtitle{
+    color: var(--background-grey);
+    padding-left: 1em;
+}
+
+/* category grid */
+
+.category-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2em;
+}
+
+/* category card */
+
+.card{
+    background-image: url("https://images.pexels.com/photos/2072148/pexels-photo-2072148.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid var(--primary-100);
+}
+
+.card-header{
+    color: var(--grey);
+    font-weight: var(--semi-bold);
+    background-color: var(--primary);
+    border-radius: var(--radius-s);
+}
+
 /* overriding btn component */
 .btn{
     margin: 0;
@@ -16,10 +61,7 @@
 
 /* overriding navbar */
 .nav-wrapper{
-    /* prolly gonna add this to actual component as well */
-    position: relative;
-    /* nav getting bigger than viewport for some reason */
-    width: auto;
+    top: 0;
 }
 
 .nav-list{
