@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./product-list.css">
     <title>Ecom Store | Category</title>
 </head>
 
@@ -16,8 +16,10 @@
     <nav>
         <div class="nav-wrapper">
             <div class="nav-logo">
-                <i class="fa-solid fa-store">
-                </i> Ecom Store
+                <a href="./index.html">
+                    <i class="fa-solid fa-store">
+                    </i> Ecom Store
+                </a>
             </div>
             <div class="nav-list">
                 <div class="nav-item input search">
@@ -25,12 +27,12 @@
                     <input class="input-data" type="text" id="search">
                 </div>
                 <button class="nav-item btn btn-ghost">Login</button>
-                <div class="nav-item icon-badge btn">
+                <div class="nav-item icon-badge btn btn-ghost">
                     <i class="fa-regular fa-heart icon">
                         <div class="badge-num">6</div>
                     </i>
                 </div>
-                <div class="nav-item icon-badge btn">
+                <div class="nav-item icon-badge btn btn-ghost">
                     <i class="fa-solid fa-cart-shopping icon">
                         <div class="badge-num">6</div>
                     </i>
@@ -38,61 +40,175 @@
             </div>
         </div>
     </nav>
-    <aside>
-        <div class="filter">
-            <div class="filter-and-clear">
-                <div>Filters</div>
-                <div>
-                    <u>Clear</u>
-                </div>
-            </div>
-            <form action="">
-                <div class="input price">
-                    <label class="input-label" for="price">Price</label>
-                    <input class="input-data" type="range" id="price" name="price" min="0" max="100">
-                    <div class="price-values">
-                        <div>0</div>
-                        <div>50</div>
-                        <div>100</div>
+    <section class="content">
+        <aside>
+            <div class="filter">
+                <div class="filter-and-clear">
+                    <div>Filters</div>
+                    <div>
+                        <u>Clear</u>
                     </div>
                 </div>
-                <p class="filter-heading">Category</p>
-                <div class="input inline-input">
-                    <input type="checkbox" id="men-clothing" name="men-clothing" checked>
-                    <label for="men-clothing">Men Clothing</label>
+                <form action="">
+                    <div class="input price">
+                        <label class="input-label" for="price">Price</label>
+                        <input class="input-data" type="range" id="price" name="price" min="0" max="100">
+                        <div class="price-values">
+                            <div>0</div>
+                            <div>50</div>
+                            <div>100</div>
+                        </div>
+                    </div>
+                    <p class="filter-heading">Category</p>
+                    <div class="input inline-input">
+                        <input type="checkbox" id="men-clothing" name="men-clothing" checked>
+                        <label for="men-clothing">Men Clothing</label>
+                    </div>
+                    <div class="input inline-input">
+                        <input type="checkbox" id="men-clothing" name="men-clothing">
+                        <label for="men-clothing">Men Clothing</label>
+                    </div>
+                    <p class="filter-heading">Rating</p>
+                    <div class="input inline-input">
+                        <input type="radio" id="4star" name="rating" checked>
+                        <label for="men-clothing">4 Star and above</label>
+                    </div>
+                    <div class="input inline-input">
+                        <input type="radio" id="2star" name="rating">
+                        <label for="men-clothing">2 Star and above</label>
+                    </div>
+                    <div class="input inline-input">
+                        <input type="radio" id="2star" name="rating">
+                        <label for="men-clothing">2 Star and above</label>
+                    </div>
+                    <div class="input inline-input">
+                        <input type="radio" id="1star" name="rating">
+                        <label for="men-clothing">1 Star and above</label>
+                    </div>
+                    <p class="filter-heading">Sort by</p>
+                    <div class="input inline-input">
+                        <input type="radio" id="low-to-high" name="sort-by" checked>
+                        <label for="men-clothing">Price- Low to High</label>
+                    </div>
+                    <div class="input inline-input">
+                        <input type="radio" id="high-to-low" name="sort-by">
+                        <label for="men-clothing">Price- High to Low</label>
+                    </div>
+                </form>
+        </aside>
+        <main>
+            <div class="product-grid">
+                <div class="card">
+                    <div class="card-img resp-img">
+                        <img src="https://images.pexels.com/photos/264791/pexels-photo-264791.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="card-image">
+                    </div>
+                    <div class="card-head">
+                        <div class="card-title subtitle2 center-text">
+                            Gift Box
+                        </div>
+                        <div class="card-subtitle h5 center-text">
+                            Rs. 500
+                        </div>
+                    </div>
+
+                    <div class="card-option">
+                        <button class="btn">Add to cart</button>
+                    </div>
                 </div>
-                <div class="input inline-input">
-                    <input type="checkbox" id="men-clothing" name="men-clothing">
-                    <label for="men-clothing">Men Clothing</label>
+                <div class="card">
+                    <div class="card-img resp-img">
+                        <img src="https://images.pexels.com/photos/264791/pexels-photo-264791.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="card-image">
+                    </div>
+                    <div class="card-head">
+                        <div class="card-title subtitle2 center-text">
+                            Gift Box
+                        </div>
+                        <div class="card-subtitle h5 center-text">
+                            Rs. 500
+                        </div>
+                    </div>
+
+                    <div class="card-option">
+                        <button class="btn">Add to cart</button>
+                    </div>
                 </div>
-                <p class="filter-heading">Rating</p>
-                <div class="input inline-input">
-                    <input type="radio" id="4star" name="rating" checked>
-                    <label for="men-clothing">4 Star and above</label>
+                <div class="card">
+                    <div class="card-img resp-img">
+                        <img src="https://images.pexels.com/photos/264791/pexels-photo-264791.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="card-image">
+                    </div>
+                    <div class="card-head">
+                        <div class="card-title subtitle2 center-text">
+                            Gift Box
+                        </div>
+                        <div class="card-subtitle h5 center-text">
+                            Rs. 500
+                        </div>
+                    </div>
+
+                    <div class="card-option">
+                        <button class="btn">Add to cart</button>
+                    </div>
                 </div>
-                <div class="input inline-input">
-                    <input type="radio" id="2star" name="rating">
-                    <label for="men-clothing">2 Star and above</label>
+                <div class="card">
+                    <div class="card-img resp-img">
+                        <img src="https://images.pexels.com/photos/264791/pexels-photo-264791.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="card-image">
+                    </div>
+                    <div class="card-head">
+                        <div class="card-title subtitle2 center-text">
+                            Gift Box
+                        </div>
+                        <div class="card-subtitle h5 center-text">
+                            Rs. 500
+                        </div>
+                    </div>
+
+                    <div class="card-option">
+                        <button class="btn">Add to cart</button>
+                    </div>
                 </div>
-                <div class="input inline-input">
-                    <input type="radio" id="2star" name="rating">
-                    <label for="men-clothing">2 Star and above</label>
+                <div class="card">
+                    <div class="card-img resp-img">
+                        <img src="https://images.pexels.com/photos/264791/pexels-photo-264791.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="card-image">
+                    </div>
+                    <div class="card-head">
+                        <div class="card-title subtitle2 center-text">
+                            Gift Box
+                        </div>
+                        <div class="card-subtitle h5 center-text">
+                            Rs. 500
+                        </div>
+                    </div>
+
+                    <div class="card-option">
+                        <button class="btn">Add to cart</button>
+                    </div>
                 </div>
-                <div class="input inline-input">
-                    <input type="radio" id="1star" name="rating">
-                    <label for="men-clothing">1 Star and above</label>
+                <div class="card">
+                    <div class="card-img resp-img">
+                        <img src="https://images.pexels.com/photos/264791/pexels-photo-264791.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="card-image">
+                    </div>
+                    <div class="card-head">
+                        <div class="card-title subtitle2 center-text">
+                            Gift Box
+                        </div>
+                        <div class="card-subtitle h5 center-text">
+                            Rs. 500
+                        </div>
+                    </div>
+
+                    <div class="card-option">
+                        <button class="btn">Add to cart</button>
+                    </div>
                 </div>
-                <p class="filter-heading">Sort by</p>
-                <div class="input inline-input">
-                    <input type="radio" id="low-to-high" name="sort-by" checked>
-                    <label for="men-clothing">Price- Low to High</label>
-                </div>
-                <div class="input inline-input">
-                    <input type="radio" id="high-to-low" name="sort-by">
-                    <label for="men-clothing">Price- High to Low</label>
-                </div>
-            </form>
-    </aside>
+            </div>
+        </main>
+    </section>
 </body>
 
 </html>
