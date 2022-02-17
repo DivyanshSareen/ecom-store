@@ -20,7 +20,7 @@
                 </i> Ecom Store
             </div>
             <div class="nav-list">
-                <div class="nav-item input">
+                <div class="nav-item input search">
                     <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
                     <input class="input-data" type="text" id="search">
                 </div>
@@ -39,21 +39,59 @@
         </div>
     </nav>
     <aside>
-        <div class="sidebar">
-            <div class="side-list">
-                <div class="side-item">
-                    <div>Filters</div>
-                    <div>Clear</div>
+        <div class="filter">
+            <div class="filter-and-clear">
+                <div>Filters</div>
+                <div>
+                    <u>Clear</u>
                 </div>
-                <div class="side-item">
-                    <h6 class="h6">Price</h6>
-                    <input type="range" id="volume" name="volume" min="0" max="11">
-                    <label for="volume">Volume</label>
-                </div>
-                <div class="side-item">Explore</div>
-                <div class="side-item">About</div>
             </div>
-        </div>
+            <form action="">
+                <div class="input price">
+                    <label class="input-label" for="price">Price</label>
+                    <input class="input-data" type="range" id="price" name="price" min="0" max="100">
+                    <div class="price-values">
+                        <div>0</div>
+                        <div>50</div>
+                        <div>100</div>
+                    </div>
+                </div>
+                <p class="filter-heading">Category</p>
+                <div class="input inline-input">
+                    <input type="checkbox" id="men-clothing" name="men-clothing" checked>
+                    <label for="men-clothing">Men Clothing</label>
+                </div>
+                <div class="input inline-input">
+                    <input type="checkbox" id="men-clothing" name="men-clothing">
+                    <label for="men-clothing">Men Clothing</label>
+                </div>
+                <p class="filter-heading">Rating</p>
+                <div class="input inline-input">
+                    <input type="radio" id="4star" name="rating" checked>
+                    <label for="men-clothing">4 Star and above</label>
+                </div>
+                <div class="input inline-input">
+                    <input type="radio" id="2star" name="rating">
+                    <label for="men-clothing">2 Star and above</label>
+                </div>
+                <div class="input inline-input">
+                    <input type="radio" id="2star" name="rating">
+                    <label for="men-clothing">2 Star and above</label>
+                </div>
+                <div class="input inline-input">
+                    <input type="radio" id="1star" name="rating">
+                    <label for="men-clothing">1 Star and above</label>
+                </div>
+                <p class="filter-heading">Sort by</p>
+                <div class="input inline-input">
+                    <input type="radio" id="low-to-high" name="sort-by" checked>
+                    <label for="men-clothing">Price- Low to High</label>
+                </div>
+                <div class="input inline-input">
+                    <input type="radio" id="high-to-low" name="sort-by">
+                    <label for="men-clothing">Price- High to Low</label>
+                </div>
+            </form>
     </aside>
 </body>
 

@@ -69,7 +69,7 @@
 }
 
 /* overriding input */
-.input{
+.search{
     margin:0;
     padding: 0;
     height: 1rem;
@@ -78,7 +78,6 @@
 }
 
 .input-data{
-    height: auto;
     border: 2px solid var(--background-grey);
 }
 
@@ -94,4 +93,38 @@
 
 .icon-badge > i{
     font-size: 1.2rem;
+}
+
+/* filter section */
+.filter{
+    background: pink;
+    width: 18em;
+    padding: 1em;
+}
+
+.filter-and-clear{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price > .input-data{
+    display: block;
+    width: 100%;
+}
+
+.price-values{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filter-heading{
+    font-weight: var(--semi-bold);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.inline-input{
+    display: inline-block;
 }
