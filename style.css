@@ -3,7 +3,7 @@
 /* hero section */
 .hero{
     height: 28rem;
-    background-image: url("https://images.pexels.com/photos/1661903/pexels-photo-1661903.jpeg?cs=srgb&dl=pexels-amy-t-1661903.jpg&fm=jpg");
+    background-image: url("./resources/hero-img.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: bottom;
@@ -26,23 +26,20 @@
 .category-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    
+    gap: 3em;
     margin: 2em;
+    
+}
+
+.card > .card-option{
+    padding: 1em;
 }
 
 /* category card */
 
-.card{
-    background-image: url("https://images.pexels.com/photos/2072148/pexels-photo-2072148.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 2px solid var(--primary-100);
-}
-
-.card-header{
-    color: var(--grey);
-    font-weight: var(--semi-bold);
-    background-color: var(--primary);
-    border-radius: var(--radius-s);
+.card > .card-img{
+    height: 100%;
 }
 
 /* overriding btn component */
@@ -62,11 +59,13 @@
 /* overriding navbar */
 .nav-wrapper{
     top: 0;
+    width: 100%;
 }
 
 .nav-list{
     /* reduced column-gap from 3em to 1em */
     column-gap: 1em;
+    margin-right: 0;
 }
 
 /* overriding input */
@@ -85,4 +84,14 @@
 
 .input-data:hover{
     border: 2px solid var(--primary);
+}
+
+/* overriding badge */
+
+.badge{
+    margin:0;
+}
+
+.icon-badge > i{
+    font-size: 1.2rem;
 }
