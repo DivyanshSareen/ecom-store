@@ -26,21 +26,30 @@
 .category-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
+    align-items: center;
     gap: 3em;
     margin: 2em;
-    
+}
+
+.card{
+    background-color: var(--secondary);
 }
 
 .card > .card-option{
+    margin: 0;
     padding: 1em;
+}
+
+.card > .card-option > .btn{
+    width: 100%;
+}
+
+.card > .card-head{
+    color: var(--secondary);
 }
 
 /* category card */
 
-.card > .card-img{
-    height: 100%;
-}
 
 /* overriding btn component */
 .btn{
