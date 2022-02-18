@@ -70,7 +70,6 @@
 }
 
 /* overriding badge */
-
 .badge{
     margin:0;
 }
@@ -89,7 +88,6 @@
 
 .filter-and-clear{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -100,7 +98,6 @@
 
 .price-values{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
