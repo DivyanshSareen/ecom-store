@@ -1,55 +1,30 @@
 @import url("https://peaceui.netlify.app/peace.css");
 
-/* hero section */
-.hero{
-    height: 28rem;
-    background-image: url("./resources/hero-img.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: bottom;
-    background-size: cover;
-    margin: 8rem 3rem 3rem 3rem;
-    border-radius: var(--radius-m);
+/* initial layout */
+.content{
+    display: flex;
 }
 
-.hero-title{
-    color: var(--primary);
-}
-
-.hero-subtitle{
-    color: var(--background-grey);
-    padding-left: 1em;
-}
-
-/* category grid */
-
-.category-grid{
+/* product display */
+.product-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    gap: 3em;
-    margin: 2em;
+    padding: 3em;
+    gap: 2em;
 }
 
-.card{
-    background-color: var(--secondary);
+/* product card */
+.card > .card-option{
+    padding: 1em;
 }
 
 .card > .card-option{
     margin: 0;
-    padding: 1em;
 }
 
 .card > .card-option > .btn{
     width: 100%;
 }
-
-.card > .card-head{
-    color: var(--secondary);
-}
-
-/* category card */
-
 
 /* overriding btn component */
 .btn{
@@ -95,11 +70,43 @@
 }
 
 /* overriding badge */
-
 .badge{
     margin:0;
 }
 
 .icon-badge > i{
     font-size: 1.8em;
+}
+
+/* filter section */
+.filter{
+    width: 18em;
+    padding: 1em;
+    box-shadow: var(--list-shadow);
+    position: sticky;
+}
+
+.filter-and-clear{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price > .input-data{
+    display: block;
+    width: 100%;
+}
+
+.price-values{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-heading{
+    font-weight: var(--semi-bold);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.inline-input{
+    display: inline-block;
 }
