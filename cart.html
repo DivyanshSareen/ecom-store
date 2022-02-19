@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./cart.css">
+    <title>Ecom Store | Cart</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="nav-logo">
+                <i class="fa-solid fa-store">
+                </i> Ecom Store
+            </div>
+            <div class="nav-list">
+                <div class="nav-item input search">
+                    <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                    <input class="input-data" type="text" id="search" placeholder="Search Products">
+                </div>
+                <button class="nav-item btn btn-ghost">Login</button>
+                <div class="nav-item icon-badge btn btn-ghost">
+                    <i class="fa-regular fa-heart icon">
+                        <div class="badge-num">6</div>
+                    </i>
+                </div>
+                <div class="nav-item icon-badge btn btn-ghost">
+                    <i class="fa-solid fa-cart-shopping icon">
+                        <div class="badge-num">6</div>
+                    </i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h5 class="h6 center-text cart-head">MY CART(3)</h5>
+    <div class="cart">
+        <div class="products">
+            <div class="card card-horizontal">
+                <div class="card-img">
+                    <img src="./product-img.jpg" alt="card-image">
+                </div>
+                <div class="card-content">
+                    <div class="card-head">
+                        <div class="card-title h5">
+                            Gift Box
+                        </div>
+                        <div class="card-subtitle h4">
+                            <ins>Rs. 2000</ins> <del>Rs. 3000</del>
+                        </div>
+                        <div class="offer">
+                            50% off
+                        </div>
+                    </div>
+                    <div class="input quantity-input">
+                        <label for="quantity" class="input-label">Quantity: </label>
+                        <input class="input-data" type="number" name="quantity" id="quantity">
+                    </div>
+                    <div class="card-option">
+                        <button class="btn">Remove From Cart</button>
+                        <button class="btn">Move to Wishlist</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-horizontal">
+                <div class="card-img">
+                    <img src="./product-img.jpg" alt="card-image">
+                </div>
+                <div class="card-content">
+                    <div class="card-head">
+                        <div class="card-title h5">
+                            Gift Box
+                        </div>
+                        <div class="card-subtitle h4">
+                            <ins>Rs. 2000</ins> <del>Rs. 3000</del>
+                        </div>
+                        <div class="offer">
+                            50% off
+                        </div>
+                    </div>
+                    <div class="input quantity-input">
+                        <label for="quantity" class="input-label">Quantity: </label>
+                        <input class="input-data" type="number" name="quantity" id="quantity">
+                    </div>
+                    <div class="card-option">
+                        <button class="btn">Remove From Cart</button>
+                        <button class="btn">Move to Wishlist</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-horizontal">
+                <div class="card-img">
+                    <img src="./product-img.jpg" alt="card-image">
+                </div>
+                <div class="card-content">
+                    <div class="card-head">
+                        <div class="card-title h5">
+                            Gift Box
+                        </div>
+                        <div class="card-subtitle h4">
+                            <ins>Rs. 2000</ins> <del>Rs. 3000</del>
+                        </div>
+                        <div class="offer">
+                            50% off
+                        </div>
+                    </div>
+                    <div class="input quantity-input">
+                        <label for="quantity" class="input-label">Quantity: </label>
+                        <input class="input-data" type="number" name="quantity" id="quantity">
+                    </div>
+                    <div class="card-option">
+                        <button class="btn">Remove From Cart</button>
+                        <button class="btn">Move to Wishlist</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bill">
+            <div class="h6 bill-heading">PRICE DETAILS</div>
+            <hr>
+            <div class="price-details">
+                <div class="price-detail">Price (2 items)</div>
+                <div class="price-value">Rs. 4999</div>
+                <div class="price-detail">Discount</div>
+                <div class="price-value">- Rs.1999</div>
+                <div class="price-detail">Dlivery Charges</div>
+                <div class="price-value">Rs. 499</div>
+            </div>
+            <hr>
+            <div class="price-details">
+                <div class="bill-heading price-detail">TOTAL AMOUNT</div>
+                <div class="price-value">Rs. 3499</div>
+            </div>
+            <hr>
+            <div class="paragraph2">You will save Rs. 1999 on this order</div>
+            <hr>
+            <div class="btn bill-btn">Place Order</div>
+        </div>
+    </div>
+</body>
+
+</html>
