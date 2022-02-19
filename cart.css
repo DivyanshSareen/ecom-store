@@ -59,6 +59,7 @@
     font-weight: var(--bold);
 }
 
+/* cart layout */
 .cart{
     width: 100vw;
     gap: 0rem;
@@ -71,7 +72,7 @@
 
 .products{
     flex-direction: column;
-    padding: 1em;
+    padding: 0em 1em 1em 1em;
     gap: 5rem;
 }
 
@@ -126,11 +127,32 @@ del{
    margin: 1em;
 }
 
-.input-data{
+.quantity-input .input-data{
     font-size: 1rem;
     padding: 0;
 }
 
 .bill{
-    background-color: greenyellow;
+    padding: 1em;
+    height: fit-content;
+    box-shadow: var(--card-shadow);
+}
+
+.bill-heading{
+    font-weight: var(--semi-bold);
+    font-size: 1.1rem;
+}
+
+.price-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.5em;
+}
+
+.price-detail{
+    justify-self: start;
+}
+
+.price-value{
+    justify-self: end;
 }
