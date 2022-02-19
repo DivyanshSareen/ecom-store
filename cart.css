@@ -156,3 +156,7 @@ del{
 .price-value{
     justify-self: end;
 }
+
+.bill-btn{
+    text-align: center;
+}
