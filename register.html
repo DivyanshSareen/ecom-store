@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./register.css">
+    <title>Ecom Store | Register</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="nav-logo">
+                <i class="fa-solid fa-store">
+                </i> Ecom Store
+            </div>
+            <div class="nav-list">
+                <div class="nav-item input search">
+                    <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                    <input class="input-data" type="text" id="search" placeholder="Search Products">
+                </div>
+                <button class="nav-item btn btn-ghost">Login</button>
+                <div class="nav-item icon-badge btn btn-ghost">
+                    <i class="fa-regular fa-heart icon">
+                        <div class="badge-num">6</div>
+                    </i>
+                </div>
+                <div class="nav-item icon-badge btn btn-ghost">
+                    <i class="fa-solid fa-cart-shopping icon">
+                        <div class="badge-num">6</div>
+                    </i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="login-area">
+        <form action="">
+            <h5 class="h5 center-text login-head">Signup</h5>
+            <div class="input">
+                <label for="email" class="input-label">Email address</label>
+                <input type="email" class="input-data" placeholder="example@gmail.com" required>
+            </div>
+            <div class="input">
+                <label for="password" class="input-label">Password</label>
+                <input type="password" id="password" class="input-data" placeholder="********" required>
+            </div>
+            <div class="input terms">
+                <input type="checkbox" class="input-data" id="terms">
+                <label for="terms">I accept all Terms & Conditions</label>
+            </div>
+            <div class="btn btn-login center-text">Create Account</div>
+            <div class="paragraph1 center-text">Already have an account <i class="fa-solid fa-chevron-right"></i></div>
+        </form>
+    </section>
+</body>
+
+</html>
